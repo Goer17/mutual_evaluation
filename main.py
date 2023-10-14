@@ -7,7 +7,7 @@ pd.set_option('display.unicode.east_asian_width', True)
 def main():
     N = 30 # 班级人数
     dic = 'mt_list/' # 表格目录
-    excel_files = [f for f in os.listdir(dic) if f.endswith('.xlsx') or f.endswith('.xls') or f.endswith('.csv')]
+    excel_files = [f for f in os.listdir(dic) if f.endswith('.xlsx') or f.endswith('.xls')]
 
     all_dat = pd.DataFrame()
     for file in excel_files:
